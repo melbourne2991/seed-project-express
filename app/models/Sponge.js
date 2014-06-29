@@ -5,7 +5,8 @@ var schema = new mongoose.Schema({
 	created_at: {type: Date, default: Date.now},
 	updated_at: {type: Date, default: Date.now},
 	_parent: {type: mongoose.Schema.Types.ObjectId, ref: 'Sponge'},
-	slug: {type: String, required: true}
+	sponges: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Sponge' }],
+	slug: {type: String}
 });
 
 var convertToSlug = function(that) {

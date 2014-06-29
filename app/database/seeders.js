@@ -12,12 +12,13 @@ var subSponges = function(master_sponge) {
 					_parent: master_sponge._id
 				});
 
+				master_sponge.sponges.push(sponge);
+				master_sponge.save();
+
 				sponge.save();
 			}
 		});
 	});
-
-	master_sponge.save();
 }
 
 module.exports = function() {

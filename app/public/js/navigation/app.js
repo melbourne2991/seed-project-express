@@ -5,6 +5,7 @@ angular.module('navigationModule', [
   'ui.router',
   'commonModule',
   'navigationModule.services',
+  'navigationModule.directives',
   'navigationModule.controllers'
 ]).
 config(['$stateProvider', function($stateProvider) {
