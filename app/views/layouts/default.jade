@@ -1,9 +1,8 @@
-html
-	head
-		link(href="bower_components/jquery/dist/jquery.js")
-		link(href="bower_components/lodash/dist/lodash.js")
-		link(href="bower_components/angular/angular.js")
-		link(href="bower_components/angular-resource/angular-resource.js")
-		link(href="bower_components/angular-ui-router/release/angular-ui-router.js")
-
-		
+extends master
+block main
+	div(class="header")
+		block header
+	div(class="body")
+		block body
+	div(class="footer")
+		block footer
